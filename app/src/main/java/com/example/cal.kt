@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         display = findViewById(R.id.display)
 
-        // Gán sự kiện cho các nút số
+       
         val numberButtons = listOf(
             R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4,
             R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             findViewById<Button>(id).setOnClickListener { onNumberClick(it) }
         }
 
-        // Gán sự kiện cho các nút phép toán
+       
         val operatorButtons = listOf(
             R.id.btnPlus, R.id.btnMinus, R.id.btnMultiply, R.id.btnDivide
         )
@@ -37,10 +37,10 @@ class MainActivity : AppCompatActivity() {
             findViewById<Button>(id).setOnClickListener { onOperatorClick(it) }
         }
 
-        // Gán sự kiện cho nút "="
+       
         findViewById<Button>(R.id.btnEqual).setOnClickListener { onEqualClick(it) }
 
-        // Gán sự kiện cho nút "C"
+        
         findViewById<Button>(R.id.btnC).setOnClickListener { onClearClick(it) }
     }
 
